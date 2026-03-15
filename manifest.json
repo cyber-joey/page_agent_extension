@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Page Agent - AI 页面助手",
   "version": "1.0.0",
-  "description": "使用自然语言操控任意网页，支持 OhMyGPT / OpenAI 兼容 API",
+  "description": "基于阿里巴巴 page-agent 的网页端 GUI 智能体，使用自然语言操控任意网页，支持 OpenAI 兼容 API",
   "permissions": ["storage", "activeTab", "scripting"],
   "action": {
     "default_popup": "popup.html",

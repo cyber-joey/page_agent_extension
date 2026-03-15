@@ -1,8 +1,8 @@
 # 🤖 Page Agent - AI 页面助手
 
-一款 Chrome 扩展，基于 [page-agent](https://github.com/alibaba/page-agent)，让你用**自然语言**操控任意网页。
+一款 Chrome 扩展，基于阿里巴巴开源的 [page-agent](https://github.com/alibaba/page-agent) —— 一个 JavaScript 网页端 GUI 智能体（In-page GUI Agent），让你用**自然语言**操控任意网页。
 
-支持所有 OpenAI 兼容 API。
+无需浏览器扩展权限、无需 Python、无需 Headless Browser，一切都在页面内完成。支持所有 OpenAI 兼容 API。
 
 ---
 
