@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Agent</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <!-- 头部 -->
+    <header class="header">
+      <div class="header-icon">
+        <img src="icons/icon48.png" alt="icon">
+      </div>
+      <div class="header-text">
+        <h1>Page Agent</h1>
+        <p class="subtitle">AI 页面助手</p>
+      </div>
+    </header>
+
+    <!-- 配置表单 -->
+    <div id="config-section" class="section">
+      <div class="form-group">
+        <label for="apiKey">API Key</label>
+        <div class="input-wrapper">
+          <input type="password" id="apiKey" placeholder="sk-..." autocomplete="off">
+          <button class="toggle-eye" id="toggleApiKey" title="显示/隐藏">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+              <circle cx="12" cy="12" r="3"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="baseURL">API Base URL</label>
+        <input type="text" id="baseURL" placeholder="https://api.ohmygpt.com/v1">
+      </div>
+
+      <div class="form-group">
+        <label for="model">模型名称</label>
+        <input type="text" id="model" placeholder="gpt-4o">
+      </div>
+
+      <div class="form-group">
+        <label for="language">界面语言</label>
+        <select id="language">
+          <option value="zh-CN">中文</option>
+          <option value="en-US">English</option>
+        </select>
+      </div>
+
+      <button id="saveBtn" class="btn-primary">
+        <span class="btn-text">保存配置</span>
+      </button>
+
+      <div id="statusMsg" class="status-msg"></div>
+    </div>
+
+    <!-- 分割线 -->
+    <div class="divider"></div>
+
+    <!-- 启动按钮 -->
+    <div class="section">
+      <button id="launchBtn" class="btn-launch" disabled>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polygon points="5 3 19 12 5 21 5 3"/>
+        </svg>
+        <span>启动 Page Agent</span>
+      </button>
+      <p class="hint">在当前页面注入 AI 助手面板</p>
+    </div>
+
+    <!-- 底部 -->
+    <footer class="footer">
+      <a href="https://github.com/alibaba/page-agent" target="_blank">GitHub</a>
+      <span class="dot">·</span>
+      <a href="https://docs.ohmygpt.com/docs" target="_blank">OhMyGPT Docs</a>
+    </footer>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
