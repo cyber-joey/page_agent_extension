@@ -18,7 +18,7 @@ const toggleApiKey = document.getElementById('toggleApiKey');
 chrome.storage.local.get(STORAGE_KEY, (data) => {
   const config = data[STORAGE_KEY] || {};
   apiKeyInput.value = config.apiKey || '';
-  baseURLInput.value = config.baseURL || 'https://api.ohmygpt.com/v1';
+  baseURLInput.value = config.baseURL || '';
   modelInput.value = config.model || 'gpt-4o';
   languageSelect.value = config.language || 'zh-CN';
 

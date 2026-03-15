@@ -2,7 +2,7 @@
 
 一款 Chrome 扩展，基于 [page-agent](https://github.com/alibaba/page-agent)，让你用**自然语言**操控任意网页。
 
-支持 [OhMyGPT](https://docs.ohmygpt.com/docs) 及所有 OpenAI 兼容 API。
+支持所有 OpenAI 兼容 API。
 
 ---
 
@@ -22,7 +22,7 @@
 2. 打开 Chrome，地址栏输入 `chrome://extensions/`
 3. 右上角打开 **开发者模式**
 4. 点击 **「加载已解压的扩展程序」**
-5. 选择 `page-agent-extension` 文件夹
+5. 选择项目文件夹
 6. 扩展图标出现在工具栏 ✅
 
 ---
@@ -36,7 +36,7 @@
 | 字段 | 说明 | 示例 |
 |------|------|------|
 | **API Key** | 你的 API 密钥 | `sk-xxx...` |
-| **API Base URL** | API 中转地址 | `https://api.ohmygpt.com/v1` |
+| **API Base URL** | OpenAI 兼容的 API 地址 | `https://api.openai.com/v1` |
 | **模型名称** | 使用的 LLM 模型 | `gpt-4o` |
 | **界面语言** | 面板显示语言 | `中文` / `English` |
 
@@ -54,22 +54,10 @@
 
 ---
 
-## 🔑 支持的 API 服务
-
-任何 **OpenAI 兼容**的 API 均可使用：
-
-| 服务 | Base URL |
-|------|----------|
-| [OhMyGPT](https://next.ohmygpt.com) | `https://api.ohmygpt.com/v1` |
-| OpenAI 官方 | `https://api.openai.com/v1` |
-| 其他中转 | 自行填写 |
-
----
-
 ## 📁 项目结构
 
 ```
-page-agent-extension/
+page_agent_extension/
 ├── manifest.json      # 扩展清单 (Manifest V3)
 ├── background.js      # Service Worker
 ├── popup.html         # 配置弹窗页面

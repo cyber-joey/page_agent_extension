@@ -9,7 +9,7 @@ chrome.runtime.onInstalled.addListener((details) => {
     chrome.storage.local.set({
       pageAgentConfig: {
         apiKey: '',
-        baseURL: 'https://api.ohmygpt.com/v1',
+        baseURL: '',
         model: 'gpt-4o',
         language: 'zh-CN',
       }
